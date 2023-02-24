@@ -1,0 +1,85 @@
+.hire{
+    padding:3% 10%;
+    font-size: 40px;
+    font-weight: 700;
+    color:rgb(2, 4, 46);
+}
+.hire h3{
+    margin: 40px auto;
+    width:50%;
+}
+.contact{
+    padding:8% 10%;
+}
+.contact_info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.contact_box{
+    width:calc(33.33% - 30px);
+    background-color:rgb(2, 4, 46);
+    padding:5% 2%;
+}
+.contact_box i{
+    color:#05beb1;
+    border:1px solid #05beb1;
+    border-radius: 100%; 
+    padding:15px;
+    font-size: 35px;
+}
+.contact_box h4{
+    margin: 15px 0;
+    color:#fff;
+}
+.contact_box p{
+    color:#afb2bf;
+}
+.contact_form{
+    display: flex;
+    justify-content: space-between;
+}
+#form_group, .map{
+    width: calc(50% - 15px);
+    text-align: start;
+}
+#form_group form{
+    display: flex;
+    flex-direction: column;
+}
+#name,#email,#subject,#message{
+    padding:10px 20px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 30px;
+    outline: none;
+}
+.map iframe{
+    width:100%;
+}
+@media(max-width:990px){
+    .hire h3{
+        width:100%;
+    }
+}
+@media(max-width:800px){
+    .contact_info{
+        flex-wrap: wrap;
+    }
+    .contact_box{
+        width:100%;
+        margin-bottom: 30px;;
+    }
+    .contact_form{
+        flex-wrap: wrap;
+    }
+    .form_group, .map{
+        width:100%;
+        margin-bottom: 30px;
+        
+    }
+}
+@media(max-width:600px){
+    .contact{
+        padding:12% 4%;
+    }
+}

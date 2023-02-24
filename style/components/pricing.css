@@ -1,0 +1,159 @@
+.pricing{
+    padding:6% 10%;
+}
+.price_plan{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.price{
+    width:calc(33.33% - 30px);
+    border:1px solid #fff;
+    color:#fff;
+    border-radius: 15px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+}
+.price_title h4{
+    padding:40px 30px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.price_value h3{
+    font-size: 45px;
+    font-weight: 700;
+}
+.price_value p{
+    font-size: 18px;
+    color:rgb(2, 4, 46);
+    padding:40px 0 60px;
+}
+.price_info{
+    position: relative;
+    overflow:hidden;
+}
+.price_info::before{ 
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
+    transform: scaleX(1.5);
+    opacity: 0.2;
+}
+ul.price_content{
+    display: inline-block;
+    text-align: center;
+}
+.btn_fill.get{
+    display: block;
+    margin: 0 auto;
+}
+.price_content li{
+    text-align: start;
+    margin: 30px 0;
+}
+.price_content li i.fa-solid.fa-check{
+    margin-right: 10px;
+}
+
+#payment{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+.open{
+    display: flex !important;
+}
+.payment-details{
+    background-color: #fff;
+    width:30%;
+    padding:4%;
+    position: relative;
+    border-radius: 4px;
+}
+.payment-details h3{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin:20px 0;
+}
+#payment-info{
+    display: flex;
+    flex-direction: column;
+}
+#card{
+    padding:10px;
+    outline: none;
+    width:100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+#payment-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.card-text{
+    text-align: start;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+#expiry-date, #cv{
+    width:80px;
+    outline: none;
+    box-sizing: border-box;
+    padding:10px;
+}
+.btn_fill.add.pay{
+    width:100%;
+}
+.btn-close{
+    position:absolute;
+    top:9%;
+    right:9%;
+    border: 1px solid #05beb1;;
+    border-radius: 4px;
+    color:rgb(2, 4, 46);
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+    transition: .4s;
+}
+.btn-close:hover{
+    background-color: #05beb1;
+}
+
+@media(max-width:990px){
+    .price_plan{
+        flex-wrap: wrap;
+    }
+    .price{
+        width:calc(50% - 30px);
+    }
+}
+@media(max-width:800px){
+    .price_plan{
+        flex-wrap: wrap;
+    }
+    .price{
+        width:100%;
+    }
+}
+@media(max-width:600px){
+    .pricing{
+        padding:12% 4%;
+    }
+}
