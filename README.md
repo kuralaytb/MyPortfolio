@@ -1,1 +1,1 @@
-You can check My Portfolio dite by thid link https://kuralaytb.github.io/MyPortfolio/
+You can check My Portfolio site by this link https://kuralaytb.github.io/MyPortfolio/
